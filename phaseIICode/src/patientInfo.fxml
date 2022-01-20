@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" prefHeight="366.0" prefWidth="581.0" text="Patient Portal" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.patientInfoController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <ComboBox fx:id="sceneDropdown" layoutX="14.0" layoutY="14.0" onAction="#switchView" prefWidth="150.0" promptText="Patient Info" />
+            <Button fx:id="changeInfoBtn" layoutX="218.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeInfo" text="Change Contact Info" />
+            <Button fx:id="askQuestionBtn" layoutX="428.0" layoutY="14.0" mnemonicParsing="false" onAction="#askQuestion" prefHeight="31.0" prefWidth="137.0" text="Have a Question?" />
+            <TextArea fx:id="visitSummaries" editable="false" layoutX="228.0" layoutY="67.0" prefHeight="237.0" prefWidth="337.0" promptText="Visit Summaries" />
+            <TextField fx:id="fstNmeFld" editable="false" layoutX="14.0" layoutY="67.0" promptText="First Name" />
+            <TextField fx:id="phoneNumFld" editable="false" layoutX="14.0" layoutY="192.0" promptText="Phone Number" />
+            <TextField fx:id="emailFld" editable="false" layoutX="14.0" layoutY="229.0" promptText="Email" />
+            <TextField fx:id="addressFld" editable="false" layoutX="14.0" layoutY="273.0" promptText="Address" />
+            <DatePicker fx:id="dob" editable="false" layoutX="13.0" layoutY="152.0" prefHeight="31.0" prefWidth="190.0" promptText="DOB" />
+            <TextField fx:id="lstNmeFld" editable="false" layoutX="14.0" layoutY="110.0" promptText="Last Name" />
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>

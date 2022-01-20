@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" prefHeight="366.0" prefWidth="581.0" text="Patient Portal" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.patientInfoController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <ComboBox fx:id="sceneDropdown" layoutX="14.0" layoutY="14.0" onAction="#switchView" prefWidth="150.0" promptText="Patient Info" />
+            <Button fx:id="changeInfoBtn" layoutX="218.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeInfo" text="Change Contact Info" />
+            <Button fx:id="askQuestionBtn" layoutX="428.0" layoutY="14.0" mnemonicParsing="false" onAction="#askQuestion" prefHeight="31.0" prefWidth="137.0" text="Have a Question?" />
+            <TextArea layoutX="228.0" layoutY="67.0" prefHeight="237.0" prefWidth="337.0" promptText="Visit Summaries" />
+            <TextField layoutX="14.0" layoutY="67.0" promptText="First and Last Name" />
+            <TextField layoutX="14.0" layoutY="167.0" promptText="Phone Number" />
+            <TextField layoutX="14.0" layoutY="217.0" promptText="Email" />
+            <TextField layoutX="14.0" layoutY="273.0" promptText="Address" />
+            <DatePicker layoutX="14.0" layoutY="112.0" prefHeight="31.0" prefWidth="190.0" promptText="DOB" />
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>

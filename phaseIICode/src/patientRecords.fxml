@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.patientRecordsController">
+   <children>
+      <TitledPane animated="false" layoutY="4.0" prefHeight="400.0" prefWidth="600.0" text="Records">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <MenuButton fx:id="sceneDropdown" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Records">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton layoutX="443.0" layoutY="14.0" mnemonicParsing="false" text="Health Records">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
+                  <TextArea fx:id="healthIssues" editable="false" layoutX="14.0" layoutY="62.0" prefHeight="272.0" prefWidth="172.0" promptText="Previous Health Issues" />
+                  <TextArea fx:id="prescriptionHistory" editable="false" layoutX="206.0" layoutY="62.0" prefHeight="125.0" prefWidth="184.0" promptText="Prescription History" />
+                  <TextArea fx:id="immunizationHistory" editable="false" layoutX="400.0" layoutY="62.0" prefHeight="128.0" prefWidth="183.0" promptText="Immunization History" />
+                  <TextArea fx:id="physicalHistory" editable="false" layoutX="206.0" layoutY="202.0" prefHeight="132.0" prefWidth="184.0" promptText="Physical History" />
+                  <TextArea fx:id="other" editable="false" layoutX="401.0" layoutY="202.0" prefHeight="131.0" prefWidth="183.0" promptText="Other reccomendations" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

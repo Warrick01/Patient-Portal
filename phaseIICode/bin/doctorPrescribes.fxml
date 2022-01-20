@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.doctorPrescribesController">
+   <children>
+      <TitledPane animated="false" layoutY="6.0" prefHeight="400.0" prefWidth="600.0" text="Prescriptions">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="66.0" prefHeight="31.0" prefWidth="204.0" promptText="Patient Name" />
+                  <TextField layoutX="14.0" layoutY="109.0" prefHeight="31.0" prefWidth="204.0" promptText="Medication Name" />
+                  <TextArea layoutX="14.0" layoutY="158.0" prefHeight="158.0" prefWidth="204.0" promptText="Diagnosis" />
+                  <TextField layoutX="315.0" layoutY="66.0" promptText="Pharmacy Name" />
+                  <TextArea layoutX="261.0" layoutY="109.0" prefHeight="238.0" prefWidth="298.0" promptText="Prescription History" />
+                  <Button layoutX="76.0" layoutY="323.0" mnemonicParsing="false" text="Prescribe" />
+                  <Label layoutX="246.0" layoutY="19.0" text="Prescriptions" />
+                  <ComboBox fx:id="sceneDropdown" layoutX="14.0" layoutY="14.0" onAction="#switchView" prefHeight="31.0" prefWidth="171.0" promptText="Prescribe Meds" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

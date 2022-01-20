@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="158.0" prefWidth="239.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.portalController">
+   <children>
+      <TitledPane animated="false" layoutY="5.0" prefHeight="362.0" prefWidth="575.0" text="Login Portal" />
+      <DatePicker fx:id="dobFld" layoutX="51.0" layoutY="192.0" prefHeight="31.0" prefWidth="188.0" promptText="DOB" />
+      <Label layoutX="260.0" layoutY="45.0" text="Login" />
+      <TextField fx:id="lstNmeFld" layoutX="51.0" layoutY="139.0" promptText="Last Name" />
+      <TextField fx:id="fstNmeFld" layoutX="51.0" layoutY="91.0" promptText="First Name" />
+      <RadioButton fx:id="docRbtn" layoutX="430.0" layoutY="186.0" mnemonicParsing="false" text="Doctor">
+         <toggleGroup>
+            <ToggleGroup fx:id="LoginType" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="nrsRbtn" layoutX="430.0" layoutY="154.0" mnemonicParsing="false" text="Nurse" toggleGroup="$LoginType" />
+      <RadioButton fx:id="patRbtn" layoutX="430.0" layoutY="122.0" mnemonicParsing="false" selected="true" text="Patient" toggleGroup="$LoginType" />
+      <Button fx:id="loginBtn" layoutX="439.0" layoutY="271.0" mnemonicParsing="false" onAction="#login" text="Login" />
+   </children>
+</AnchorPane>

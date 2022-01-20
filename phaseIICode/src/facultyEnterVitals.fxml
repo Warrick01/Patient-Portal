@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.facultyEnterVitalsController">
+   <children>
+      <TitledPane animated="false" layoutX="7.0" prefHeight="400.0" prefWidth="600.0" text="Vitals">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="fstNmeFld" layoutX="14.0" layoutY="55.0" promptText="First Name" />
+                  <TextField fx:id="lstNmeFld" layoutX="14.0" layoutY="105.0" promptText="Last Name" />
+                  <TextField fx:id="weightFld" layoutX="14.0" layoutY="156.0" prefHeight="31.0" prefWidth="101.0" promptText="Weight" />
+                  <TextField fx:id="heightFld" layoutX="14.0" layoutY="200.0" promptText="Height" />
+                  <TextField fx:id="bodyTempFld" layoutX="14.0" layoutY="249.0" promptText="Body Temperature" />
+                  <TextArea fx:id="allergiesFld" layoutX="231.0" layoutY="56.0" prefHeight="115.0" prefWidth="345.0" promptText="Allergies" />
+                  <TextArea fx:id="healthConcernsFld" layoutX="231.0" layoutY="185.0" prefHeight="129.0" prefWidth="343.0" promptText="Health Concerns" />
+                  <TextField fx:id="bloodFld" layoutX="14.0" layoutY="300.0" promptText="Blood Pressure" />
+                  <TextField fx:id="ageFld" layoutX="131.0" layoutY="156.0" prefHeight="31.0" prefWidth="52.0" promptText="Age" />
+                  <Button fx:id="updateBtn" layoutX="348.0" layoutY="323.0" mnemonicParsing="false" text="Update Vitals" />
+                  <ComboBox fx:id="sceneDropdown" layoutX="14.0" layoutY="14.0" onAction="#switchView" prefHeight="31.0" prefWidth="134.0" promptText="Enter Vitals" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

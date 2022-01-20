@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.patientChangeInfoController">
+   <children>
+      <TitledPane animated="false" prefHeight="400.0" prefWidth="600.0" text="Change Contact Information">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="fstNmeFld" layoutX="206.0" layoutY="62.0" promptText="First Name" />
+                  <TextField fx:id="lstNmeFld" layoutX="206.0" layoutY="109.0" promptText="Last Name" />
+                  <TextField fx:id="phoneNumFld" layoutX="206.0" layoutY="199.0" promptText="Phone Number" />
+                  <TextField fx:id="emailFld" layoutX="206.0" layoutY="245.0" promptText="Email" />
+                  <TextField fx:id="addressFld" layoutX="206.0" layoutY="287.0" promptText="Address" />
+                  <Button fx:id="updateInfoBtn" layoutX="250.0" layoutY="323.0" mnemonicParsing="false" onAction="#updateInfo" text="Update Info" />
+                  <Label layoutX="206.0" layoutY="19.0" text="Change Contact Information" />
+                  <DatePicker fx:id="dob" layoutX="208.0" layoutY="153.0" prefHeight="31.0" prefWidth="185.0" promptText="DOB" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Doctor &amp; Nurse Login" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.docNurseLoginController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <PasswordField layoutX="193.0" layoutY="215.0" promptText="Password" />
+            <TextField layoutX="193.0" layoutY="117.0" promptText="Username" />
+            <Label layoutX="235.0" layoutY="54.0" prefHeight="21.0" prefWidth="102.0" text="Faculty Login" />
+            <Button fx:id="loginBtn" layoutX="492.0" layoutY="303.0" mnemonicParsing="false" onAction="#login" text="Login" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

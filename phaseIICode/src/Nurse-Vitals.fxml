@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NurseMainController">
+   <children>
+      <TitledPane animated="false" layoutX="7.0" prefHeight="400.0" prefWidth="600.0" text="Vitals">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="weightFld" layoutX="65.0" layoutY="27.0" prefHeight="31.0" prefWidth="101.0" promptText="Weight" />
+                  <TextField fx:id="heightFld" layoutX="65.0" layoutY="73.0" promptText="Height" />
+                  <TextField fx:id="bodyTempFld" layoutX="65.0" layoutY="122.0" promptText="Body Temperature" />
+                  <TextField fx:id="bloodFld" layoutX="65.0" layoutY="174.0" promptText="Blood Pressure" />
+                  <Button layoutX="376.0" layoutY="314.0" mnemonicParsing="false" onAction="#vitals" text="Update Vitals" />
+                  <TextField fx:id="allergiesFld" layoutX="65.0" layoutY="225.0" promptText="Allergies" />
+                  <TextField fx:id="assignedDoctorFld" layoutX="65.0" layoutY="266.0" promptText="Assigned Doctor" />
+                  <Label fx:id="vitalsMessage" alignment="CENTER" layoutX="289.0" layoutY="281.0" prefHeight="20.0" prefWidth="273.0" textFill="#353ffa">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
